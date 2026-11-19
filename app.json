@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Binder Scan",
+    "slug": "binder-scan-demo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.binderscan"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Binder Scan takes photos of your binder pages to identify the cards."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Binder Scan reads the binder photos you choose."
+        }
+      ]
+    ]
+  }
+}
